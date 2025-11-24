@@ -2,7 +2,7 @@
 
 ## Team Members
 1. **Ingabire Esther** - 27202
-2. 
+2. **Nkurunziza Amos** - 26973
 3. 
 4. 
 
