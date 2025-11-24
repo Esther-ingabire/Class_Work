@@ -3,7 +3,7 @@
 ## Team Members
 1. **Ingabire Esther** - 27202
 2. **Nkurunziza Amos** - 26973
-3. 
+3. **uwitonze pacific** - 26983
 4. 
 
 ## Project Structure
