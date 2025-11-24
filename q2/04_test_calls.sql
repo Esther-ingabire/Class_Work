@@ -1,0 +1,41 @@
+-- Sample calls demonstrating the package functionality
+
+-- 1. Test RSSB tax calculation
+DECLARE
+    v_tax NUMBER;
+BEGIN
+    v_tax := hr_employee_mgmt.calculate_rssb_tax(75000);
+    DBMS_OUTPUT.PUT_LINE('RSSB Tax: ' || v_tax);
+END;
+/
+
+-- 2. Test net salary calculation
+DECLARE
+    v_net_salary NUMBER;
+BEGIN
+    v_net_salary := hr_employee_mgmt.calculate_net_salary(101);
+    DBMS_OUTPUT.PUT_LINE('Net Salary: ' || v_net_salary);
+END;
+/
+
+-- 3. Test dynamic operations
+BEGIN
+    hr_employee_mgmt.dynamic_employee_operation('UPDATE_SALARY', 101, 80000);
+END;
+/
+
+BEGIN
+    hr_employee_mgmt.dynamic_employee_operation('INSERT_RECORD', 104, 90000);
+END;
+/
+
+BEGIN
+    hr_employee_mgmt.dynamic_employee_operation('GENERATE_REPORT', NULL, 70000);
+END;
+/
+
+-- 4. Test bulk processing (Optional Challenge)
+BEGIN
+    hr_employee_mgmt.process_bulk_employees(10);
+END;
+/
